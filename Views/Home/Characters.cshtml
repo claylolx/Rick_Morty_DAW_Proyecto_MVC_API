@@ -1,0 +1,20 @@
+@model IEnumerable<PROJECTE_DAW_API.Models.Character>
+
+@{
+    ViewBag.Title = "Personajes | Rick & Morty";
+}
+
+<h1>@ViewBag.Title</h1>
+
+<div class="character-container">
+    @foreach (var character in Model)
+    {
+        <div class="character-card">
+            <img src="@character.image" alt="@character.name" class="character-image">
+            <div class="character-details">
+                <h2>@character.name</h2>
+                <p>Status: @character.status</p>
+            </div>
+        </div>
+    }
+</div>
