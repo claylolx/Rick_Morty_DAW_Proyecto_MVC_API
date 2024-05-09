@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "C4SattO+qkNPimpd1hyVzVBAK+ENxzU+qbdaIft1zdfMeUchKrLB4ztV+ZJ/Tpft2hps5oxydj2u5wrlm4FfHA==",
+  "dgSpecHash": "LGmpwFGj1qiMx0XZHdo2RXvTVqwgAOcG1Y5rscWdp7dAZlj+qexy7uDiKVDxKVlbZjnwnbnqutKigcQF3zAXHw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sergi\\Downloads\\1DAW\\M4 Llenguatge de marques i sistemes\\UF3\\PROJECTE_DAW_API\\PROJECTE_DAW_API.csproj",
+  "projectFilePath": "C:\\Users\\joanm\\OneDrive\\Desktop\\Rick_Morty_DAW_Proyecto_MVC_API-main\\PROJECTE_DAW_API.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Sergi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\joanm\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
