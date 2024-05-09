@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joanm\\OneDrive\\Desktop\\Rick_Morty_DAW_Proyecto_MVC_API-main\\PROJECTE_DAW_API.csproj",
+      "projectUniqueName": "C:\\Users\\joanm\\OneDrive\\Desktop\\github\\Rick_Morty_DAW_Proyecto_MVC_API\\PROJECTE_DAW_API.csproj",
       "projectName": "PROJECTE_DAW_API",
-      "projectPath": "C:\\Users\\joanm\\OneDrive\\Desktop\\Rick_Morty_DAW_Proyecto_MVC_API-main\\PROJECTE_DAW_API.csproj",
+      "projectPath": "C:\\Users\\joanm\\OneDrive\\Desktop\\github\\Rick_Morty_DAW_Proyecto_MVC_API\\PROJECTE_DAW_API.csproj",
       "packagesPath": "C:\\Users\\joanm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joanm\\OneDrive\\Desktop\\Rick_Morty_DAW_Proyecto_MVC_API-main\\obj\\",
+      "outputPath": "C:\\Users\\joanm\\OneDrive\\Desktop\\github\\Rick_Morty_DAW_Proyecto_MVC_API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\joanm\\AppData\\Roaming\\NuGet\\NuGet.Config"
