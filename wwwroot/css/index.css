@@ -1,3 +1,7 @@
+body {
+    background-color: #f3f1f1;
+}
+
 .container {
     flex: 1;
 }
@@ -5,11 +9,11 @@
 .text-left {
     flex: 1;
     text-align: left;
-    margin-top: 230px;
+    margin-top: 190px;
     padding: 40px; /* Añade un espacio interior alrededor del contenido */
     border: 1px solid #ccc; /* Añade un borde sólido */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Añade una sombra */
-    height: 300px;
+    box-shadow: 2px 2px 5px rgba(0, 0.2, 0.1, 0.3); /* Añade una sombra */
+    height: 35  0px;
     width: 550px;
     background-color: #9eeb5b;
 }
@@ -18,7 +22,7 @@
     flex: 1;
     text-align: right;
     margin-right: 30px;
-    margin-top: -350px;
+    margin-top: -380px;
 
 }
 
