@@ -1,7 +1,18 @@
 @model IEnumerable<PROJECTE_DAW_API.Models.Character>
 
 @{
-    ViewBag.Title = "Personajes | Rick & Morty";
+    ViewBag.Title = "Characters | Rick & Morty";
+    int currentPage = ViewBag.CurrentPage ?? 1;
+    int totalPages = ViewBag.TotalPages ?? 1;
+    int maxPagesToShow = 8;
+    int startPage = Math.Max(1, currentPage - maxPagesToShow / 2);
+    int endPage = Math.Min(totalPages, startPage + maxPagesToShow - 1);
+
+    // Adjust startPage if we are at the end of the total pages
+    if (endPage - startPage < maxPagesToShow)
+    {
+        startPage = Math.Max(1, endPage - maxPagesToShow + 1);
+    }
 }
 
 <h1>@ViewBag.Title</h1>
@@ -10,11 +21,32 @@
     @foreach (var character in Model)
     {
         <div class="character-card">
-            <img src="@character.image" alt="@character.name" class="character-image">
+            <div class="image-container">
+                <img src="@character.image" alt="@character.name" class="character-image">
+                <span class="status-label @(character.status.ToLower())">@character.status</span>
+            </div>
             <div class="character-details">
                 <h2>@character.name</h2>
-                <p>Status: @character.status</p>
+                <p>Origin: @character.origin.name</p>
+                <p>Last Known Location: @character.location.name</p>
             </div>
         </div>
+    }
+</div>
+
+<div class="pagination">
+    @if (ViewBag.PrevPage != null)
+    {
+        <a href="@Url.Action("Characters", new { page = ViewBag.PrevPage })" class="btn btn-primary">Previous</a>
+    }
+
+    @for (int i = startPage; i <= endPage; i++)
+    {
+        <a href="@Url.Action("Characters", new { page = i })" class="btn @(i == currentPage ? "btn-secondary" : "btn-primary")">@i</a>
+    }
+
+    @if (ViewBag.NextPage != null)
+    {
+        <a href="@Url.Action("Characters", new { page = ViewBag.NextPage })" class="btn btn-primary">Next</a>
     }
 </div>

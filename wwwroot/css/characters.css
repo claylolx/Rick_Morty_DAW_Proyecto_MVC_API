@@ -9,12 +9,39 @@
     border-radius: 5px;
     padding: 10px;
     width: 200px;
+    position: relative; /* Add this line */
+}
+
+.image-container {
+    position: relative; /* Add this line */
 }
 
 .character-image {
     width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+.status-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.status-label.alive {
+    background-color: green;
+}
+
+.status-label.dead {
+    background-color: red;
+}
+
+.status-label.unknown {
+    background-color: gray;
 }
 
 .character-details {
@@ -30,4 +57,15 @@
 .character-details p {
     margin: 0;
     font-size: 14px;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.pagination .btn {
+    margin: 0 5px;
 }
