@@ -1,0 +1,22 @@
+@model PROJECTE_DAW_API.Models.Naruto.Root
+
+<h1>@ViewBag.Title</h1>
+
+<div class="character-container">
+@foreach (var character in Model.characters)
+{
+    @if (character.images != null && character.images.Any())
+    {
+        <div class="character-card">
+            <img src="@character.images.FirstOrDefault()" alt="@character.name" class="character-image">
+            <div class="character-details">
+                <h2>@character.name</h2>
+            </div>
+            @if (!string.IsNullOrEmpty(character.personal.status))
+            {
+                <span class="status-label">@character.personal.status</span>
+            }
+        </div>
+    }
+}
+</div>

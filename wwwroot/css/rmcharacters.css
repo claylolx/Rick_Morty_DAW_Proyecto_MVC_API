@@ -9,11 +9,11 @@
     border-radius: 5px;
     padding: 10px;
     width: 200px;
-    position: relative; /* Add this line */
+    position: relative;
 }
 
 .image-container {
-    position: relative; /* Add this line */
+    position: relative;
 }
 
 .character-image {

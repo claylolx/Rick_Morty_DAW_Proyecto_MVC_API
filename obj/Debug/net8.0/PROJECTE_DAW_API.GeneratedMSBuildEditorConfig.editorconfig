@@ -18,16 +18,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\sergi\OneDrive\Escritorio\github\Rick_Morty_DAW_Proyecto_MVC_API
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/sergi/OneDrive/Escritorio/github/Rick_Morty_DAW_Proyecto_MVC_API/Views/Home/Characters.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGFyYWN0ZXJzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/sergi/OneDrive/Escritorio/github/Rick_Morty_DAW_Proyecto_MVC_API/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/sergi/OneDrive/Escritorio/github/Rick_Morty_DAW_Proyecto_MVC_API/Views/Home/NarutoCharacters.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOYXJ1dG9DaGFyYWN0ZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sergi/OneDrive/Escritorio/github/Rick_Morty_DAW_Proyecto_MVC_API/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sergi/OneDrive/Escritorio/github/Rick_Morty_DAW_Proyecto_MVC_API/Views/Home/RMCharacters.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSTUNoYXJhY3RlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sergi/OneDrive/Escritorio/github/Rick_Morty_DAW_Proyecto_MVC_API/Views/Shared/Error.cshtml]

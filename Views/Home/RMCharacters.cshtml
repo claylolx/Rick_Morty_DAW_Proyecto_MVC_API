@@ -1,14 +1,13 @@
 @model IEnumerable<PROJECTE_DAW_API.Models.Character>
 
 @{
-    ViewBag.Title = "Characters | Rick & Morty";
+    ViewBag.Title = "Rick & Morty Characters";
     int currentPage = ViewBag.CurrentPage ?? 1;
     int totalPages = ViewBag.TotalPages ?? 1;
     int maxPagesToShow = 8;
     int startPage = Math.Max(1, currentPage - maxPagesToShow / 2);
     int endPage = Math.Min(totalPages, startPage + maxPagesToShow - 1);
 
-    // Adjust startPage if we are at the end of the total pages
     if (endPage - startPage < maxPagesToShow)
     {
         startPage = Math.Max(1, endPage - maxPagesToShow + 1);
@@ -35,18 +34,27 @@
 </div>
 
 <div class="pagination">
+    <a href="@Url.Action("RMCharacters", new { page = 1 })" class="btn btn-primary">First</a>
+    
     @if (ViewBag.PrevPage != null)
     {
-        <a href="@Url.Action("Characters", new { page = ViewBag.PrevPage })" class="btn btn-primary">Previous</a>
+        <a href="@Url.Action("RMCharacters", new { page = ViewBag.PrevPage })" class="btn btn-primary">Previous</a>
     }
 
     @for (int i = startPage; i <= endPage; i++)
     {
-        <a href="@Url.Action("Characters", new { page = i })" class="btn @(i == currentPage ? "btn-secondary" : "btn-primary")">@i</a>
+        <a href="@Url.Action("RMCharacters", new { page = i })" class="btn @(i == currentPage ? "btn-secondary" : "btn-primary")">@i</a>
     }
 
     @if (ViewBag.NextPage != null)
     {
-        <a href="@Url.Action("Characters", new { page = ViewBag.NextPage })" class="btn btn-primary">Next</a>
+        <a href="@Url.Action("RMCharacters", new { page = ViewBag.NextPage })" class="btn btn-primary">Next</a>
+    }
+
+    @if (endPage < totalPages)
+    {
+        <a href="@Url.Action("RMCharacters", new { page = totalPages })" class="btn btn-primary">Last</a>
     }
 </div>
+
+

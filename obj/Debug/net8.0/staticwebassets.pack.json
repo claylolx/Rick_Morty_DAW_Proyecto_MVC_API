@@ -5,12 +5,16 @@
       "PackagePath": "staticwebassets\\PROJECTE_DAW_API.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\sergi\\OneDrive\\Escritorio\\github\\Rick_Morty_DAW_Proyecto_MVC_API\\wwwroot\\css\\characters.css",
-      "PackagePath": "staticwebassets\\css\\characters.css"
-    },
-    {
       "Id": "C:\\Users\\sergi\\OneDrive\\Escritorio\\github\\Rick_Morty_DAW_Proyecto_MVC_API\\wwwroot\\css\\index.css",
       "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\sergi\\OneDrive\\Escritorio\\github\\Rick_Morty_DAW_Proyecto_MVC_API\\wwwroot\\css\\narutocharacters.css",
+      "PackagePath": "staticwebassets\\css\\narutocharacters.css"
+    },
+    {
+      "Id": "C:\\Users\\sergi\\OneDrive\\Escritorio\\github\\Rick_Morty_DAW_Proyecto_MVC_API\\wwwroot\\css\\rmcharacters.css",
+      "PackagePath": "staticwebassets\\css\\rmcharacters.css"
     },
     {
       "Id": "C:\\Users\\sergi\\OneDrive\\Escritorio\\github\\Rick_Morty_DAW_Proyecto_MVC_API\\wwwroot\\css\\site.css",
