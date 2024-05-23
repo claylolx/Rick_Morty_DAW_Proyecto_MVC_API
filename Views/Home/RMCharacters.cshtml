@@ -14,47 +14,47 @@
     }
 }
 
-<h1>@ViewBag.Title</h1>
-
-<div class="character-container">
-    @foreach (var character in Model)
-    {
-        <div class="character-card">
-            <div class="image-container">
-                <img src="@character.image" alt="@character.name" class="character-image">
-                <span class="status-label @(character.status.ToLower())">@character.status</span>
+<div class="container mt-5">
+    <h1 class="display-4 text-center">@ViewBag.Title</h1>
+    <div class="row">
+        @foreach (var character in Model)
+        {
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <div class="image-container">
+                        <img src="@character.image" class="card-img-top" alt="@character.name">
+                        <span class="status-label @(character.status.ToLower())">@character.status</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">@character.name</h5>
+                        <p class="card-text">Origin: @character.origin.name</p>
+                        <p class="card-text">Last Known Location: @character.location.name</p>
+                    </div>
+                </div>
             </div>
-            <div class="character-details">
-                <h2>@character.name</h2>
-                <p>Origin: @character.origin.name</p>
-                <p>Last Known Location: @character.location.name</p>
-            </div>
-        </div>
-    }
+        }
+    </div>
+
+    <nav>
+        <ul class="pagination justify-content-center">
+            <li class="page-item @(currentPage == 1 ? "disabled" : "")">
+                <a class="page-link" href="@Url.Action("RMCharacters", new { page = 1 })">First</a>
+            </li>
+            <li class="page-item @(ViewBag.PrevPage == null ? "disabled" : "")">
+                <a class="page-link" href="@Url.Action("RMCharacters", new { page = ViewBag.PrevPage })">Previous</a>
+            </li>
+            @for (int i = startPage; i <= endPage; i++)
+            {
+                <li class="page-item @(i == currentPage ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("RMCharacters", new { page = i })">@i</a>
+                </li>
+            }
+            <li class="page-item @(ViewBag.NextPage == null ? "disabled" : "")">
+                <a class="page-link" href="@Url.Action("RMCharacters", new { page = ViewBag.NextPage })">Next</a>
+            </li>
+            <li class="page-item @(currentPage == totalPages ? "disabled" : "")">
+                <a class="page-link" href="@Url.Action("RMCharacters", new { page = totalPages })">Last</a>
+            </li>
+        </ul>
+    </nav>
 </div>
-
-<div class="pagination">
-    <a href="@Url.Action("RMCharacters", new { page = 1 })" class="btn btn-primary">First</a>
-    
-    @if (ViewBag.PrevPage != null)
-    {
-        <a href="@Url.Action("RMCharacters", new { page = ViewBag.PrevPage })" class="btn btn-primary">Previous</a>
-    }
-
-    @for (int i = startPage; i <= endPage; i++)
-    {
-        <a href="@Url.Action("RMCharacters", new { page = i })" class="btn @(i == currentPage ? "btn-secondary" : "btn-primary")">@i</a>
-    }
-
-    @if (ViewBag.NextPage != null)
-    {
-        <a href="@Url.Action("RMCharacters", new { page = ViewBag.NextPage })" class="btn btn-primary">Next</a>
-    }
-
-    @if (endPage < totalPages)
-    {
-        <a href="@Url.Action("RMCharacters", new { page = totalPages })" class="btn btn-primary">Last</a>
-    }
-</div>
-
-

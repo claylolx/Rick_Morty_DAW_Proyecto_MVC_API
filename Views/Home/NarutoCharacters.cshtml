@@ -1,22 +1,29 @@
 @model PROJECTE_DAW_API.Models.Naruto.Root
 
-<h1>@ViewBag.Title</h1>
-
-<div class="character-container">
-@foreach (var character in Model.characters)
-{
-    @if (character.images != null && character.images.Any())
-    {
-        <div class="character-card">
-            <img src="@character.images.FirstOrDefault()" alt="@character.name" class="character-image">
-            <div class="character-details">
-                <h2>@character.name</h2>
-            </div>
-            @if (!string.IsNullOrEmpty(character.personal.status))
-            {
-                <span class="status-label">@character.personal.status</span>
-            }
-        </div>
-    }
+@{
+    ViewBag.Title = "Naruto Characters";
 }
+
+<div class="container mt-5">
+    <h1 class="display-4 text-center">@ViewBag.Title</h1>
+    <div class="row">
+        @foreach (var character in Model.characters)
+        {
+            @if (character.images != null && character.images.Any())
+            {
+                <div class="col-md-3">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="@character.images.FirstOrDefault()" class="card-img-top" alt="@character.name">
+                        <div class="card-body">
+                            <h5 class="card-title">@character.name</h5>
+                            @if (!string.IsNullOrEmpty(character.personal.status))
+                            {
+                                <span class="badge bg-danger">@character.personal.status</span>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
 </div>

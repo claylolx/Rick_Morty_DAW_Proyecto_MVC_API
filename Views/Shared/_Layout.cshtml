@@ -1,58 +1,56 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - PROJECTE_DAW_API</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/PROJECTE_DAW_API.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/rmcharacters.css" />
     <link rel="stylesheet" href="~/css/index.css" />
+    <link rel="stylesheet" href="~/css/rmcharacters.css" />
     <link rel="stylesheet" href="~/css/narutocharacters.css" />
-    
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                <div class="navbarLogo">
-                    <img class="imagenLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/1280px-Rick_and_Morty.svg.png" alt="">
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <a class="navbar-brand" href="#">
+                    <img src="https://th.bing.com/th/id/OIG2.lRWjcCKH.I5kBae0HlH8?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Logo" class="logo-img">
+                    Projecte DAW
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="RMCharacters">R&M Characters</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="RMCharacters">R&M Characters</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="NarutoCharacters">Naruto Characters</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="NarutoCharacters">Naruto Characters</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - Ricky and Morty By Sergi Martinez y Joan Merino
+    <main role="main" class="container mt-5 pt-5">
+        @RenderBody()
+    </main>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+            &copy; 2024 - Rick and Morty-Naruto By Sergi Martinez y Joan Merino
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

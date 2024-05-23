@@ -55,19 +55,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sergi\\.nuget\\packages\\": {}
+    "C:\\Users\\joanm\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sergi\\OneDrive\\Escritorio\\github\\Rick_Morty_DAW_Proyecto_MVC_API\\PROJECTE_DAW_API.csproj",
+      "projectUniqueName": "C:\\Users\\joanm\\OneDrive\\Desktop\\github\\Rick_Morty_DAW_Proyecto_MVC_API\\PROJECTE_DAW_API.csproj",
       "projectName": "PROJECTE_DAW_API",
-      "projectPath": "C:\\Users\\sergi\\OneDrive\\Escritorio\\github\\Rick_Morty_DAW_Proyecto_MVC_API\\PROJECTE_DAW_API.csproj",
-      "packagesPath": "C:\\Users\\sergi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sergi\\OneDrive\\Escritorio\\github\\Rick_Morty_DAW_Proyecto_MVC_API\\obj\\",
+      "projectPath": "C:\\Users\\joanm\\OneDrive\\Desktop\\github\\Rick_Morty_DAW_Proyecto_MVC_API\\PROJECTE_DAW_API.csproj",
+      "packagesPath": "C:\\Users\\joanm\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\joanm\\OneDrive\\Desktop\\github\\Rick_Morty_DAW_Proyecto_MVC_API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sergi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\joanm\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

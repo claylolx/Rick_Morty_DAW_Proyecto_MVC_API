@@ -1,24 +1,55 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.navbar-brand {
+  margin-left: 30px;
+  padding-top: 10px;
+  color: #C2B280; /* Yellowish for text */
+}
 
+.navbar {
+  background: linear-gradient(to right, #FFFFFF, #66CCFF); 
+}
+
+.card-body {
+  background: linear-gradient(to bottom right, #fff, #dfe7cf); 
+}
+
+.card:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow on hover */
+}
+
+.card {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.navbar {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.footer {
+  background: linear-gradient(to left, #FFFFFF, #FFA500); /* Transición de blanco a naranja */
+  color: rgb(255, 255, 255);
+}
+
+.logo-img {
+  margin-right: 10px; /* Adjust the margin as needed */
+  height: 40px;
+  width: 40px;
+}

@@ -12,6 +12,11 @@
     position: relative;
 }
 
+.display-4 {
+margin-bottom: 55px;
+margin-top: -25px;
+}
+
 .image-container {
     position: relative;
 }
@@ -26,12 +31,12 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    padding: 5px 10px;
+    padding: 2px 5px; /* Ajustar el tamaño del padding para hacer las etiquetas más pequeñas */
     border-radius: 3px;
     color: #fff;
     font-weight: bold;
+    font-size: 0.8em; /* Reducir el tamaño de la fuente */
 }
-
 .status-label.alive {
     background-color: green;
 }
