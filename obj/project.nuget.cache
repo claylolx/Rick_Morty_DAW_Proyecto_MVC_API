@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "d2XhrnGDNOLq8g+R2LcpYxsIdMzLa8RM9p8PpK95xnJ1lUQhQW+AbapcuJ8BWN0coV3VH1v7VV0qAyNzlBkZLg==",
+  "dgSpecHash": "722rdR+l6sR8AF/ZDBMWLTl4uzBkXfI117CEQ5VBVIM51e61ovyUkl6Zq9TN91PoY2mPnKKC+mQ/ZzY8ebqNwA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\joanm\\OneDrive\\Desktop\\github\\Rick_Morty_DAW_Proyecto_MVC_API\\PROJECTE_DAW_API.csproj",
+  "projectFilePath": "C:\\Users\\sergi\\OneDrive\\Escritorio\\github\\Rick_Morty_DAW_Proyecto_MVC_API\\PROJECTE_DAW_API.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\joanm\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\sergi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
